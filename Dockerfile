@@ -1,4 +1,4 @@
-FROM python:3.10.0-alpine
+FROM python:3.11.0-alpine
 WORKDIR /code
 EXPOSE 8000
 COPY ./requirements.txt /code/requirements.txt
