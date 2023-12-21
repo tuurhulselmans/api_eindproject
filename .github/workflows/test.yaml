@@ -1,0 +1,27 @@
+name: Python Tests
+
+on:
+  push:
+    branches: [ main ]  # Hier kun je de branch specificeren waarop je de tests wilt uitvoeren
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'  # Kies hier de gewenste Python-versie
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run tests
+      run: |
+        python test_endpoints.py  # Vervang dit door de juiste naam van je testbestand
