@@ -25,7 +25,7 @@ if not os.path.exists('.\sqlitedb'):
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
-allowed_origin = "https://tuurhulselmans.github.io"
+allowed_origin = "https://dancing-melba-034ff1.netlify.app"
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 app.add_middleware(
