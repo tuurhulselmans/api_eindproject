@@ -1,7 +1,7 @@
 from passlib.context import CryptContext
 import crud
 from sqlalchemy.orm import Session
-from jose import JWTError, jwt
+from jose import JWTError,jwt
 from datetime import datetime, timedelta
 
 # Secret key and algorithm for JWT
