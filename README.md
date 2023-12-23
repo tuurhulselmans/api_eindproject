@@ -8,7 +8,7 @@ Voor het eindprojecet van API heb ik net zoals vorig project gebruik gemaakt van
 - [API-endpoints](#api-endpoints)
 - [Front-end](#front-end)
 - [Screenshots](#screenshots)
-- [Besluit](#Besluit/punten)
+- [Besluit/punten](#besluit)
 
 
 ## Projectstructuur
